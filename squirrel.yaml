@@ -1,0 +1,147 @@
+# Squirrel settings
+# encoding: utf-8
+#
+# squirrel[.custom].yaml 是鼠须管的前端配置文件，小狼毫是 weasel[.custom].yaml
+# 各平台皮肤配置并不一致。
+#
+# 鼠须管内置皮肤展示： https://github.com/NavisLab/rime-pifu
+# 鼠须管界面配置指南： https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/鼠鬚管介面配置指南.md
+# 鼠须管作者写的图形化的皮肤设计器： https://github.com/LEOYoon-Tsaw/Squirrel-Designer
+
+# 要比共享目录的同名文件的 config_version 大才可以生效
+
+config_version: '2025-10-23'  # config_version: '1.0.3'
+
+# 选项: last | default | _custom_
+# last: 上次使用的拉丁键盘布局
+# default: 美国 (ABC) 键盘布局
+# _custom_: 您选择的键盘布局, 例如 'com.apple.keylayout.USExtended' 或简单的 'USExtended'
+keyboard_layout: default
+
+# for veteran chord-typist
+chord_duration: 0.1  # seconds
+
+# options: always | never | appropriate
+show_notifications_when: appropriate
+
+
+# ascii_mode、inline、no_inline、vim_mode 等等设定
+# 可参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
+app_options:
+  com.apple.Spotlight:
+    ascii_mode: true    # 开启默认英文
+  com.microsoft.VSCode:
+    ascii_mode: true   # 关闭默认英文
+  com.raycast.macos:
+    ascii_mode: true
+  com.googlecode.iterm2:
+    ascii_mode: true
+    vim_mode: true
+  net.kovidgoyal.kitty:
+    ascii_mode: true
+    vim_mode: true
+  com.github.wez.wezterm:
+    ascii_mode: true
+    vim_mode: true
+  com.mitchellh.ghostty:
+    ascii_mode: true
+    # vim_mode: true
+    ex_vim_mode: true
+
+style:
+  # 选择皮肤，亮色与暗色主题
+  color_scheme: mac
+  color_scheme_dark: mac_dark
+
+  # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
+  
+  # 自 0.36(Squirrel 0.15) 起已弃用。覆写为横向，建议使用 candidate_list_layout
+  # horizontal: false
+  # # stacked | linear | tabled 候选项排列方向(如果希望水平，设置linear)
+  candidate_list_layout: linear  # stacked | linear | tabled
+  
+  text_orientation: horizontal  # horizontal | vertical
+  # 内嵌预编辑
+  inline_preedit: true
+  inline_candidate: false
+  
+  # 展示分页
+  show_paging : false
+  
+  # 记住面板大小后,它朝向屏幕中心扩展,而不是远离屏幕中心。
+  remember_size: false
+
+  # 外边框 圆角半径
+  corner_radius: 10
+  # 色彩空间： srgb | display_p3
+  color_space: srgb
+  
+  # 选中框 圆角半径
+  hilited_corner_radius: 0
+  
+  # 窗口边界高度，大于圆角半径才生效
+  border_height: 0
+  # 窗口边界宽度，大于圆角半径才生效
+  border_width: 0
+  # 在堆叠(stacked)布局中,候选词之间的空间
+  line_spacing: 5
+  # 在非内嵌(inline_preedit)模式下，预编辑和候选词之间的空间
+  spacing: 10
+  # 预编辑和候选词的行长度(如果值>0则固定,否则为灵活/自动调整)。
+  line_length: 0
+
+  # 候选词格式
+  # candidate_format: '%c. %@'
+
+  # 全局字体及大小
+  font_face: 'PingFang SC'
+  font_point: 16
+  # 序号字体及大小（建议使用「等宽字体」）
+  label_font_face: 'Lucida Grande'
+  label_font_point: 16
+  # 注字体及大小
+  comment_font_face: 'PingFang SC'
+  comment_font_point: 14
+
+
+preset_color_schemes:
+  mac:
+    name: macOS Light
+    author: "lonr <https://lonr.eu.org>"
+    back_color: 0xf1f2f2 # background
+    label_color: 0x808080 # label
+    candidate_text_color: 0x494949 # candidate
+    comment_text_color: 0x494949 # comment
+    hilited_candidate_back_color: 0xd85a00
+    hilited_candidate_label_color: 0xffffff
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0xffffff
+    # text_color: 0x808080                    # 拼音颜色 （inline_preedit: false）
+    # hilited_text_color: 0xEEEEEE            # 选中拼音颜色 （inline_preedit: false）
+    # candidate_back_color:                 # 候选项底色
+    # preedit_back_color:                   # 拼音底色 （inline_preedit: false）
+    # hilited_back_color:                   # 选中拼音底色 （inline_preedit: false）
+    # border_color:                         # 外边框颜色
+
+  mac_dark:
+    name: macOS Dark
+    author: "lonr <https://lonr.eu.org>"
+    back_color: 0x393939
+    label_color: 0x7b7b7b
+    candidate_text_color: 0xebebeb
+    comment_text_color: 0xebebeb
+    hilited_candidate_back_color: 0xd15900
+    hilited_candidate_label_color: 0xffffff
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0xffffff
+
+  mac_green:
+    author: "Tommew"
+    back_color: 0xf1f2f2 # background
+    label_color: 0x808080 # label
+    candidate_text_color: 0x494949 # candidate
+    comment_text_color: 0x494949 # comment
+    hilited_candidate_back_color: 0x7BAE4F
+    hilited_candidate_label_color: 0xffffff
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0xffffff
