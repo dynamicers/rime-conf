@@ -36,16 +36,19 @@ app_options:
     ascii_mode: true
   com.googlecode.iterm2:
     ascii_mode: true
-    vim_mode: true
+    ex_vim_mode: true
   net.kovidgoyal.kitty:
     ascii_mode: true
-    vim_mode: true
+    ex_vim_mode: true
   com.github.wez.wezterm:
     ascii_mode: true
-    vim_mode: true
+    ex_vim_mode: true
   com.mitchellh.ghostty:
     ascii_mode: true
     # vim_mode: true
+    ex_vim_mode: true
+  dev.zed.Zed:
+    ascii_mode: true
     ex_vim_mode: true
 
 style:
