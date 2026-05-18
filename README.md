@@ -21,3 +21,5 @@
 1. 只保留小鹤双拼方案，删除其他全拼、双拼方案
 
 2. 增加 ex_vim_mode。相比 Rime 自带的 vim_mode，从 vim 的 Normal Mode 切换为 Insert Mode 时，会自动恢复为上次使用的输入模式。这样在使用中文输入，切换到 Normal Mode 再切回 Insert Mode 时，Rime 会自动切回中文模式，无须手动切换。具体实现见 [ex_vim_mode.lua](https://github.com/dynamicers/rime-conf/blob/main/lua/ex_vim_mode.lua)
+
+3. 增加 key_log_mode。打开后可以将 rime 收到的按键按时间戳顺序记录到日志中，debug 场景使用。具体实现见 [key_log_mode.lua](https://github.com/dynamicers/rime-conf/blob/main/lua/key_log_mode.lua)
