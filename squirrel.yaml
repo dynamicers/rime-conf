@@ -27,28 +27,8 @@ show_notifications_when: appropriate
 # ascii_mode、inline、no_inline、vim_mode 等等设定
 # 可参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
 app_options:
-  com.apple.Spotlight:
-    ascii_mode: true
-  com.microsoft.VSCode:
-    ascii_mode: true
-  com.raycast.macos:
-    ascii_mode: true
-  com.googlecode.iterm2:
-    ascii_mode: true
-    ex_vim_mode: true
-  net.kovidgoyal.kitty:
-    ascii_mode: true
-    ex_vim_mode: true
-  com.github.wez.wezterm:
-    ascii_mode: true
-    ex_vim_mode: true
-  com.mitchellh.ghostty:
-    ascii_mode: true
-    # vim_mode: true
-    ex_vim_mode: true
   dev.zed.Zed:
-    ascii_mode: true
-    ex_vim_mode: true
+    key_log_mode: true
 
 style:
   # 选择皮肤，亮色与暗色主题
