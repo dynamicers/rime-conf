@@ -33,6 +33,8 @@ app_options:
     ascii_mode: true
   com.raycast.macos:
     ascii_mode: true
+  com.utmapp.UTM:
+    ascii_mode: true
   com.googlecode.iterm2:
     ascii_mode: true
     ex_vim_mode: true
