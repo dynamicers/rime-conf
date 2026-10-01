@@ -1,0 +1,30 @@
+patch:
+  app_options:
+    code:
+      ascii_mode: true
+    Code:
+      ascii_mode: true
+    foot:
+      ascii_mode: true
+      ex_vim_mode: true
+    kitty:
+      ascii_mode: true
+      ex_vim_mode: true
+    wezterm:
+      ascii_mode: true
+      ex_vim_mode: true
+    org.wezfurlong.wezterm:
+      ascii_mode: true
+      ex_vim_mode: true
+    ghostty:
+      ascii_mode: true
+      ex_vim_mode: true
+    com.mitchellh.ghostty:
+      ascii_mode: true
+      ex_vim_mode: true
+    zed:
+      ascii_mode: true
+      ex_vim_mode: true
+    dev.zed.Zed:
+      ascii_mode: true
+      ex_vim_mode: true
